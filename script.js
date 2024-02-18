@@ -123,7 +123,7 @@ const app = {
     let parts = url.split("/");
     let name = parts[parts.length - 1];
 
-    getFile(url, data => {
+    app.getFile(url, data => {
       const blob = new Blob([data], { type: "application/octet-stream" });
       saveAs(blob, name);
     });
@@ -174,7 +174,7 @@ searchBox.addEventListener("keyup", function () {
 
 btn.onclick = () => {
   if (app.libraries.length === 1) {
-    app.downloadFile(input);
+    app.downloadFile(app.libraries[0]);
     return false;
   }
   
