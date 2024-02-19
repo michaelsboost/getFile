@@ -23,10 +23,14 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <div class="absolute inset-0 h-screen bg-gradient-to-b from-indigo-200 via-purple-50 to-indigo-200"></div>
+    <div class="absolute inset-0 h-screen bg-gradient-to-b from-indigo-100 via-green-50 to-indigo-100"></div>
 
     <div class="absolute inset-0 flex h-screen">
       <div class="m-auto p-4">
+        <div class="text-center">
+          <img class="w-60" src="imgs/logo.svg" alt="getFile">
+        </div>
+        
         <input id="searchBox" class="bg-white" type="search" placeholder="Search for resources (JQuery, Bootstrap, Foundation...)">
         <ul id="suggestions" class="px-4 capitalize"></ul>
         <div id="sortLibraries"></div>
