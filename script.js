@@ -159,18 +159,16 @@ app.displayLibrariesArray();
 const sortLibrariesContainer = document.getElementById("sortLibraries");
 const searchBox = document.getElementById("searchBox");
 const suggestionsList = document.getElementById("suggestions");
-searchBox.addEventListener("keyup", function () {
-  const searchText = this.value.trim();
+searchBox.onkeyup = () => {
+  const searchText = searchBox.value.trim();
   suggestionsList.innerHTML = "";
-  if (!searchBox.value) {
+  if (searchText.length <= 0) {
     suggestionsList.innerHTML = "";
     return false;
-  }
-
-  if (searchText.length > 0) {
+  } else {
     app.fetchSuggestions(searchText);
   }
-});
+};
 
 btn.onclick = () => {
   if (app.libraries.length === 1) {
