@@ -33,5 +33,14 @@
     <div id="root" class="absolute inset-0 overflow-auto"></div>
 
     <script src="script.js"></script>
+    <script src="https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js"></script>
+    <script>
+      // service worker for progressive web app
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./dist/sw.js')
+        })
+      }
+    </script>
   </body>
 </html>

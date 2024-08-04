@@ -256,7 +256,7 @@ function App() {
   return /*#__PURE__*/React.createElement("div", {
     className: "container flex flex-col justify-center gap-2 h-full"
   }, /*#__PURE__*/React.createElement("div", {
-    className: ""
+    className: "p-4"
   }, /*#__PURE__*/React.createElement("div", {
     className: "text-center mb-8"
   }, /*#__PURE__*/React.createElement(LogoIcon, null)), /*#__PURE__*/React.createElement("fieldset", {

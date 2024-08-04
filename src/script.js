@@ -116,7 +116,7 @@ function App() {
 
   return (
     <div className="container flex flex-col justify-center gap-2 h-full">
-      <div className="">
+      <div className="p-4">
         <div className="text-center mb-8">
           <LogoIcon />
         </div>
