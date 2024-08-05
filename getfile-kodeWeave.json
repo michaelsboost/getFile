@@ -27,5 +27,7 @@
   "module": true,
   "autorun": false,
   "pwa": true,
-  "columns": true
+  "activePanel": "javascript",
+  "columns": true,
+  "columnsRight": true
 }
