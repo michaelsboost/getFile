@@ -28,6 +28,7 @@
   "autorun": false,
   "pwa": true,
   "activePanel": "javascript",
+  "preview": true,
   "columns": true,
   "columnsRight": true,
   "obj": {}
