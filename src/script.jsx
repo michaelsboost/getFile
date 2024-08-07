@@ -133,7 +133,7 @@ function App() {
             value={searchText}
             onInput={handleSearch}
           />
-          <button onClick={() => addLibrary('')}>
+          <button aria-label="add library" name="add library" onClick={() => addLibrary('')}>
             +
           </button>
         </fieldset>
@@ -152,13 +152,13 @@ function App() {
                   setLibraries(newLibraries);
                 }}
               />
-              <button className="w-auto border-0 bg-red-400 rounded-l-none py-0" onClick={() => removeLibrary(index)}>
+              <button aria-label="remove library" name="remove library" className="w-auto border-0 bg-red-400 rounded-l-none py-0" onClick={() => removeLibrary(index)}>
                 ✘
               </button>
             </fieldset>
           ))}
         </div>
-        <button className="w-full" onClick={() => {
+        <button aria-label="export export" name="download resources" className="w-full" onClick={() => {
           if (libraries.length === 1) downloadFile(libraries[0]);
           else exportZip(libraries);
         }}>
