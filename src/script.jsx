@@ -121,7 +121,7 @@ function App() {
     <div className="container flex flex-col justify-center gap-2 h-full">
       <div className="p-4">
         <div className="text-center mb-8">
-          <a style={{color: 'unset'}} href="https://github.com/michaelsboost/getFile" target="_blank">
+          <a aria-label="github repo" name="github repo" style={{color: 'unset'}} href="https://github.com/michaelsboost/getFile" target="_blank">
             <LogoIcon />
           </a>
         </div>
