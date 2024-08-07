@@ -56,6 +56,7 @@ function App() {
   
   const getFile = async url => {
     try {
+      if (libraries.length <= 0) return;
       const response = await fetch(url);
       if (!response.ok) throw new Error("Network response was not ok");
       return await response.text();
@@ -67,6 +68,7 @@ function App() {
   
   const downloadFile = async url => {
     try {
+      if (libraries.length <= 0) return;
       const data = await getFile(url);
       const parts = url.split("/");
       const name = parts[parts.length - 1];
@@ -79,6 +81,7 @@ function App() {
   
   const exportZip = async libraries => {
     try {
+      if (libraries.length <= 0) return;
       let zip = new JSZip();
       const promises = libraries.map(async library => {
         const data = await getFile(library);

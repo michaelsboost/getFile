@@ -1,6 +1,6 @@
 {
   "name": "getFile",
-  "version": "0.02",
+  "version": "0.2.0",
   "title": "getFile: An easy way to save any file over the internet!",
   "description": "An easy way to save any file over the internet!",
   "author": "Michael Schwartz",
@@ -10,7 +10,7 @@
     "https://unpkg.com/react@latest/umd/react.development.js",
     "https://unpkg.com/react-dom@latest/umd/react-dom.development.js",
     "https://cdnjs.cloudflare.com/ajax/libs/picocss/2.0.6/pico.min.css",
-    "https://michaelsboost.com/TailwindCSSMod/tailwind-mod.min.js",
+    "https://michaelsboost.com/TailwindCSSMod/tailwind-mod-noreset.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"
   ],
@@ -25,10 +25,9 @@
   "dark": true,
   "module": true,
   "autorun": false,
-  "pwa": true,
-  "activePanel": "javascript",
+  "pwa": false,
   "preview": true,
-  "columns": true,
-  "columnsRight": true,
-  "obj": {}
+  "activePanel": "javascript",
+  "columns": false,
+  "columnsRight": true
 }
