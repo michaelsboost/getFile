@@ -22,17 +22,20 @@
     <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.svg">
     <link rel="icon" type="image/svg+xml" href="imgs/logo.svg" />
     <link rel="apple-touch-icon" href="imgs/logo.svg">
-    <link rel="stylesheet" href="dist/bundle.css">
-    <script src="https://unpkg.com/react@latest/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
-    <script src="libraries/jszip.min.js"></script>
-    <script src="libraries/FileSaver.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/picocss/2.0.6/pico.min.css" rel="stylesheet">
   </head>
   <body>
     <div id="root" class="absolute inset-0 overflow-auto"></div>
 
-    <script src="dist/script.js" type="module"></script>
-    <script src="https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js"></script>
+    <script src="https://unpkg.com/react@latest/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
+    <script src="https://michaelsboost.com/TailwindCSSMod/tailwind-mod-noreset.min.js"></script>
+    <script src="libraries/jszip.min.js"></script>
+    <script src="libraries/FileSaver.min.js"></script>
+    
+    <script src="libraries/babel.min.js"></script>
+    <script type="text/babel" src="src/script.jsx" data-type="module"></script>
+    <!-- <script src="https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js"></script>
     <script>
       // service worker for progressive web app
       if ('serviceWorker' in navigator) {
@@ -40,6 +43,6 @@
           navigator.serviceWorker.register('./sw.js')
         })
       }
-    </script>
+    </script> -->
   </body>
 </html>
