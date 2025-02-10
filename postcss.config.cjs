@@ -4,7 +4,9 @@ module.exports = {
     require('autoprefixer'),
     require('tailwindcss'),
     require('cssnano')({
-      preset: 'default',
+      preset: ['default', {
+        discardComments: { removeAll: true }, // Remove all comments
+      }],
     }),
   ],
 };
